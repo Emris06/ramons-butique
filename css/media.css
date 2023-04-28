@@ -1,9 +1,16 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   #navbar ul {
     display: none;
   }
+
   .hamburger {
     display: flex;
+  }
+  .hero__img {
+    display: none;
+  }
+  .btn {
+    width: 80%;
   }
   .hero {
     background-image: none;
@@ -11,6 +18,10 @@
   .hero__content {
     margin: 0 auto;
     padding: 0px 10px;
+    width: 100%;
+  }
+  .hero__title {
+    font-size: 32px;
   }
   .quit__btn {
     position: absolute;
@@ -25,7 +36,7 @@
     transform: scale(0.9);
   }
   .extra__menu {
-    opacity: 1;
+    display: none;
   }
   .categories__h2 {
     margin-top: 40px;
@@ -53,7 +64,7 @@
     text-align: justify;
   }
   .info {
-    margin: 30px 0px;
+    margin: 30px auto;
   }
   .info__content {
     margin: 0 auto;
@@ -74,12 +85,12 @@
   .info__title p {
     text-align: justify;
   }
-  .info__title .btn {
-    width: 100%;
-  }
+
   .contact__form {
     height: auto;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 40px;
   }
   .card {
     margin: 15px 0px;

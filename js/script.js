@@ -7,3 +7,10 @@ hamburger.addEventListener("click", () => {
 quitBtn.addEventListener("click", () => {
   extraMenu.classList.remove("active");
 });
+
+let linkItems = document.querySelectorAll("#link__item");
+linkItems.forEach((linkItem) => {
+  linkItem.addEventListener("click", () => {
+    extraMenu.classList.remove("active");
+  });
+});

@@ -88,7 +88,6 @@ body {
   background-color: white;
   transform: translateX(100%);
   transition: 0.4s;
-  opacity: 0;
   z-index: 100;
 }
 .extra__menu.active {
@@ -102,12 +101,18 @@ body {
 .extra__menu .links li {
   margin: 20px 0px;
 }
+.wrapper__hero {
+  display: flex;
+  justify-content: space-around;
+}
 .hero {
   height: calc(100vh - 80px);
-  background-image: url("../imgs/hero__img.webp");
-  background-position: center;
+  /* background-image: url("../imgs/hero__img.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+.hero__img {
+  width: 60%;
 }
 .wrapper {
   max-width: 1268px;
@@ -116,7 +121,7 @@ body {
 }
 .hero__content {
   height: 100%;
-  width: 450px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
